@@ -7,8 +7,8 @@ function validarEmails(email) {
 function tomarDatosDeRegistro() {
     let name = document.getElementById('nameInput').value
     let email = document.getElementById('emailInput').value
-    let emoji = document.getElementById('badFace').style.display = 'none'
-    let emojiSmile = document.getElementById('smileyFace').style.display = 'inline'
+    document.getElementById('badFace').style.display = 'none'
+    document.getElementById('smileyFace').style.display = 'inline'
     validarEmails(email)
     console.log(name, email)
 }
