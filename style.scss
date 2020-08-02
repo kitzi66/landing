@@ -1,5 +1,155 @@
-header{
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (min-width: $screen+"px") {
+        @content;
+    }
+}
+
+header {
     img {
         width: 100%;
+    }
+}
+.paragraph {
+    padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.imgContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    img {
+        width: 10em;
+        height: 10em;
+        justify-self: center;
+        align-self: center;
+    }
+}
+.inputContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 10em);
+    gap: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    div {
+        width: 8em;
+        height: 3em;
+        justify-content: center;
+        align-items: center;
+        input {
+            width: 9em;
+            height: 1em;
+        }
+        h6 {
+            margin: 6px;
+        }
+    }
+}
+.registrationBtn {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.emoji {
+    font-size: 100px;
+    margin-top: 6px;
+}
+
+#smileyFace {
+    display: none;
+}
+@include lg {
+    .registrationContainer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .emoji {
+        font-size: 100px;
+        margin-top: 10em;
+    }
+    .imgContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        img {
+            width: 30em;
+            height: 30em;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+    .inputContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 20em);
+        gap: 3em;
+        padding: 3em;
+        margin-top: 2em;
+        div {
+            width: 20em;
+            height: 6em;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 19em;
+                height: 2em;
+            }
+            h6 {
+                margin: 6px;
+                font-size: 1em;
+            }
+        }
+    }
+    .registrationBtn {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        button {
+            margin-top: 2em;
+            width: 6em;
+            height: 3em;
+        }
+    }
+    .emojiContainer {
+        margin-top: 4em;
     }
 }
