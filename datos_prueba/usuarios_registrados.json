@@ -1,0 +1,23 @@
+{  
+"Usuarios": [{
+    "id":1,
+    "nombre":"kitzia",
+    "email":"kitzia@algo.com"
+},
+ {
+    "id":2,
+    "nombre":"ximena",
+    "email":"ximena@algo.com"
+ },
+ {
+    "id":3,
+    "nombre":"natalia",
+    "email":"natalia@algo.com"
+ },
+ {
+    "id":4,
+    "nombre":"silvina",
+    "email":"silvina@algo.com"
+ }
+]
+}

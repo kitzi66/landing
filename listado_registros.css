@@ -1,0 +1,15 @@
+.titulo-listado{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.titulo-listado > div{
+    font-weight: bold;    
+}
+
+.detalle{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
