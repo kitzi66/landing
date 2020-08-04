@@ -45,8 +45,25 @@ $screen-xl-min: 1200px;
 }
 
 header {
+    height: 15em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    z-index: 0;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
     img {
         width: 100%;
+        z-index: 1;
+    }
+    a {
+        z-index: 3;
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 1.5em;
     }
 }
 .paragraph {
